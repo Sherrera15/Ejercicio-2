@@ -122,6 +122,7 @@ public class Principal3 extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Cantidad de Pares"));
 
+        txtCantidadesPares.setEditable(false);
         txtCantidadesPares.setColumns(20);
         txtCantidadesPares.setRows(5);
         jScrollPane1.setViewportView(txtCantidadesPares);
@@ -146,6 +147,7 @@ public class Principal3 extends javax.swing.JFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Cantidad de Impares"));
 
+        txtCantidadImpares.setEditable(false);
         txtCantidadImpares.setColumns(20);
         txtCantidadImpares.setRows(5);
         jScrollPane2.setViewportView(txtCantidadImpares);
@@ -170,6 +172,7 @@ public class Principal3 extends javax.swing.JFrame {
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Cantidad de Primos"));
 
+        txtCantidadesPrimos.setEditable(false);
         txtCantidadesPrimos.setColumns(20);
         txtCantidadesPrimos.setRows(5);
         jScrollPane3.setViewportView(txtCantidadesPrimos);
@@ -239,6 +242,7 @@ public class Principal3 extends javax.swing.JFrame {
 
     private void txtMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMostrarActionPerformed
         // TODO add your handling code here:
+        
         int pares = 0, impares = 0; 
         for (int i=0; i<v.length; i++) {
             
@@ -259,6 +263,7 @@ public class Principal3 extends javax.swing.JFrame {
               conta++;
           }
        }
+            
             if(conta==2){
               primos++;
               txtCantidadesPrimos.append(v[i]+ " ");
