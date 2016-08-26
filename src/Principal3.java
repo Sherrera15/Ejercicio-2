@@ -35,11 +35,11 @@ public class Principal3 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtNumeros = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        txtCrear = new javax.swing.JButton();
-        txtLlenarManual = new javax.swing.JButton();
-        txtLlenarAuto = new javax.swing.JButton();
-        txtMostrar = new javax.swing.JButton();
-        txtBorrar = new javax.swing.JButton();
+        cmdCrear = new javax.swing.JButton();
+        cmdLlenarManual = new javax.swing.JButton();
+        cmdLlenarAuto = new javax.swing.JButton();
+        cmdMostrar = new javax.swing.JButton();
+        cmdBorrar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -75,45 +75,45 @@ public class Principal3 extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtCrear.setText("Crear");
-        txtCrear.addActionListener(new java.awt.event.ActionListener() {
+        cmdCrear.setText("Crear");
+        cmdCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCrearActionPerformed(evt);
+                cmdCrearActionPerformed(evt);
             }
         });
-        jPanel2.add(txtCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 20, 100, -1));
+        jPanel2.add(cmdCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 20, 100, -1));
 
-        txtLlenarManual.setText("Llenar Manual");
-        txtLlenarManual.addActionListener(new java.awt.event.ActionListener() {
+        cmdLlenarManual.setText("Llenar Manual");
+        cmdLlenarManual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLlenarManualActionPerformed(evt);
+                cmdLlenarManualActionPerformed(evt);
             }
         });
-        jPanel2.add(txtLlenarManual, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 49, -1, -1));
+        jPanel2.add(cmdLlenarManual, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 49, -1, -1));
 
-        txtLlenarAuto.setText("Llenar Auto");
-        txtLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
+        cmdLlenarAuto.setText("Llenar Auto");
+        cmdLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLlenarAutoActionPerformed(evt);
+                cmdLlenarAutoActionPerformed(evt);
             }
         });
-        jPanel2.add(txtLlenarAuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 78, 100, -1));
+        jPanel2.add(cmdLlenarAuto, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 78, 100, -1));
 
-        txtMostrar.setText("Mostrar");
-        txtMostrar.addActionListener(new java.awt.event.ActionListener() {
+        cmdMostrar.setText("Mostrar");
+        cmdMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtMostrarActionPerformed(evt);
+                cmdMostrarActionPerformed(evt);
             }
         });
-        jPanel2.add(txtMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 107, 100, -1));
+        jPanel2.add(cmdMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 107, 100, -1));
 
-        txtBorrar.setText("Borrar");
-        txtBorrar.addActionListener(new java.awt.event.ActionListener() {
+        cmdBorrar.setText("Borrar");
+        cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBorrarActionPerformed(evt);
+                cmdBorrarActionPerformed(evt);
             }
         });
-        jPanel2.add(txtBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 136, 100, -1));
+        jPanel2.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 136, 100, -1));
 
         jLabel3.setText("Opciones");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 0, -1, -1));
@@ -198,7 +198,7 @@ public class Principal3 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearActionPerformed
+    private void cmdCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCrearActionPerformed
         // TODO add your handling code here:
         int numeros;
         if (txtNumeros.getText().trim().isEmpty()){
@@ -217,7 +217,7 @@ public class Principal3 extends javax.swing.JFrame {
         
         
         }
-    }//GEN-LAST:event_txtCrearActionPerformed
+    }//GEN-LAST:event_cmdCrearActionPerformed
 
     private void txtNumerosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumerosKeyTyped
         // TODO add your handling code here:
@@ -230,7 +230,7 @@ public class Principal3 extends javax.swing.JFrame {
           
     }//GEN-LAST:event_txtNumerosKeyTyped
 
-    private void txtLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarManualActionPerformed
+    private void cmdLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManualActionPerformed
         // TODO add your handling code here:
         double s;
         for (int i=0; i<v.length; i++) {
@@ -238,9 +238,9 @@ public class Principal3 extends javax.swing.JFrame {
         v[i]=s;
         
         }
-    }//GEN-LAST:event_txtLlenarManualActionPerformed
+    }//GEN-LAST:event_cmdLlenarManualActionPerformed
 
-    private void txtMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMostrarActionPerformed
+    private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
         // TODO add your handling code here:
         
         int pares = 0, impares = 0; 
@@ -270,9 +270,9 @@ public class Principal3 extends javax.swing.JFrame {
             }
             }
         
-    }//GEN-LAST:event_txtMostrarActionPerformed
+    }//GEN-LAST:event_cmdMostrarActionPerformed
 
-    private void txtBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBorrarActionPerformed
+    private void cmdBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrarActionPerformed
         // TODO add your handling code here:
         
         txtNumeros.setText("");
@@ -285,9 +285,9 @@ public class Principal3 extends javax.swing.JFrame {
         
         v = null;
         txtNumeros.requestFocusInWindow();
-    }//GEN-LAST:event_txtBorrarActionPerformed
+    }//GEN-LAST:event_cmdBorrarActionPerformed
 
-    private void txtLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarAutoActionPerformed
+    private void cmdLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarAutoActionPerformed
         // TODO add your handling code here:
         int s;
         for (int i=0; i<v.length; i++) {
@@ -297,7 +297,7 @@ public class Principal3 extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, "Vector Llenado Correctamente");
         }
-    }//GEN-LAST:event_txtLlenarAutoActionPerformed
+    }//GEN-LAST:event_cmdLlenarAutoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -335,6 +335,11 @@ public class Principal3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdBorrar;
+    private javax.swing.JButton cmdCrear;
+    private javax.swing.JButton cmdLlenarAuto;
+    private javax.swing.JButton cmdLlenarManual;
+    private javax.swing.JButton cmdMostrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -346,14 +351,9 @@ public class Principal3 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JButton txtBorrar;
     private javax.swing.JTextArea txtCantidadImpares;
     private javax.swing.JTextArea txtCantidadesPares;
     private javax.swing.JTextArea txtCantidadesPrimos;
-    private javax.swing.JButton txtCrear;
-    private javax.swing.JButton txtLlenarAuto;
-    private javax.swing.JButton txtLlenarManual;
-    private javax.swing.JButton txtMostrar;
     private javax.swing.JTextField txtNumeros;
     // End of variables declaration//GEN-END:variables
 }
